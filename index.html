@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Body Mass Index Calculator</title>
+</head>
+<body>
+  <section class="hero">
+    
+    <div class="hero-text">
+      <img id="logo" alt="logo" src="./assets/images/logo.svg">
+      <h1>Body Mass<br \>Index Calculator</h1>
+      <p>
+        Better understand your weight in relation to your height using our 
+        body mass index (BM) calculator. While BMI is not the sole determinant 
+        of a healthy weight, it offers a valuable starting point to evaluate 
+        your overall health and well-being.
+      </p>
+    </div>
+    <div class="calc-form">
+      <h3>Enter your details below</h3>
+      <div class="user-radio">
+        <label><input type="radio" name="system" id="metric" value="metric" checked>Metric</label>
+        <label><input type="radio" name="system" id="imperial" value="imperial">Imperial</label>
+      </div>
+      <div class="form-grid" id="metric-form">
+        <div class="input-wrapper">
+          <p>Height</p>
+          <div class="input-box">
+            <input type="number" name="height-m" id="height-m" placeholder="0">
+            <p>cm</p>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p>Weight</p>
+          <div class="input-box">
+            <input type="number" name="weight-m"id="weight-m" placeholder="0">
+            <p>kg</p> 
+          </div>
+        </div>
+        
+      </div>
+      <div class="hide" id="imperial-form">
+        <div class="input-wrapper">
+          <p>Height</p>
+          <div class="flex-form">
+            <div class="input-box">
+              <input type="number" name="height-ft" id="height-ft" placeholder="0">
+              <p>ft</p>
+            </div>
+            <div class="input-box">
+              <input type="number" name="height-in" id="height-in" placeholder="0">
+              <p>in</p>
+            </div>
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <p>Weight</p>
+          <div class="flex-form">
+            <div class="input-box">
+              <input type="number" name="weight-st" id="weight-st" placeholder="0">
+              <p>st</p>
+            </div>
+            <div class="input-box">
+              <input type="number" name="weight-lbs" id="weight-lbs" placeholder="0">
+              <p>lbs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summary">
+        <div class="" id="welcome-msg">
+          <h3>Welcome!</h3>
+          <p>Enter your height and weight and you’ll see your BMI result here</p>
+        </div>
+        <div class="result hide" id="result">
+          <div class="bmi-result">
+            <p>Your BMI is...</p>
+            <h1 id="bmi-result">22.5</h1>
+          </div>
+          <div class="bmi-text">
+            <p>Your BMI suggests you're <span id="classification">test text</span>. Your ideal weigh is between <span id="ideal-weigth">test text</span>.</p>
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+  <section class="explain-results">
+    <img alt="'a man eating sushi" src="./assets/images/image-man-eating.webp">
+    <div class="explain-text">
+      <img src="./assets/images/pattern-curved-line-left.svg">
+      <h2>What your BMI result means</h2>
+      <p>
+        A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a 
+        healthy weight may lower your chances of experiencing health issues later on, 
+        such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced 
+        fat and sugar content, incorporating ample fruits and vegetables. Additionally, 
+        strive for regular physical activity, ideally about 30 minutes daily for 
+        five days a week.
+      </p>
+    </div>
+  </section>
+  <section class="tips">
+    <div class="tips-item">
+      <img src="./assets/images/icon-eating.svg">
+      <div class="tip-text">
+        <h3>Healthy eating</h3>
+        <p>
+          Healthy eating promotes weight control, disease prevention, better digestion, 
+          immunity, mental clarity, and mood.
+        </p>
+      </div>
+    </div>
+    <div class="tips-item">
+      <img src="./assets/images/icon-exercise.svg">
+      <div class="tip-text">
+        <h3>Regular exercise</h3>
+        <p>
+          Exercise improves fitness, aids weight control, elevates mood, and reduces disease 
+          risk, fostering wellness and longevity.
+        </p>
+     </div>
+    </div>
+    <div class="tips-item">
+      <img src="./assets/images/icon-sleep.svg">
+      <div class="tip-text">
+        <h3>Adequate sleep</h3>
+        <p>
+          Sleep enhances mental clarity, emotional stability, and physical wellness, promoting 
+          overall restoration and rejuvenation.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="limitations">
+      <div class="limit-text">
+        <h2>Limitations of BMI</h2>
+        <p>
+          Although BMI is often a practical indicator of healthy weight, it is not suited for 
+          every person. Specific groups should carefully consider their BMI outcomes, and in 
+          certain cases, the measurement may not be beneficial to use.
+        </p>
+      </div>
+      <div class="limit-item gender">
+        <h4><img src="./assets/images/icon-gender.svg">Gender</h4>
+        <p>
+          The development and body fat composition of girls and boys vary with age. Consequently, 
+          a child's age and gender are considered when evaluating their BMI.
+        </p>
+      </div>
+      <div class="break"></div>
+      <div class="limit-item age">
+        <h4><img src="./assets/images/icon-age.svg">Age</h4>
+        <p>
+          In aging individuals, increased body fat and muscle loss may cause BMI to underestimate 
+          body fat content.
+        </p>
+      </div>
+      <div class="limit-item muscle">
+        <h4><img src="./assets/images/icon-muscle.svg">Muscle</h4>
+        <p>
+          BMI may misclassify muscular individuals as overweight or obese, as it doesn't 
+          differentiate muscle from fat.
+        </p>
+      </div>
+      <div class="break"></div>
+      <div class="limit-item pregnancy">
+        <h4><img src="./assets/images/icon-pregnancy.svg">Pregnancy</h4>
+        <p>
+          Expectant mothers experience weight gain due to their growing baby. Maintaining a 
+          healthy pre-pregnancy BMI is advisable to minimise health risks for both mother 
+          and child.
+        </p>
+      </div>
+      <div class="limit-item race">
+        <h4><img src="./assets/images/icon-race.svg">Race</h4>
+        <p>
+          Certain health concerns may affect individuals of some Black and Asian origins at 
+          lower BMIs than others. To learn more, it is advised to discuss this with your 
+          GP or practice nurse.
+        </p>
+      </div>
+    <!-- </div> -->
+  </section>  
+</body>
+<script src="script.js"></script>
+</html>
